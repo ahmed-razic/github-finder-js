@@ -51,7 +51,6 @@ class UI {
       `;
     });
 
-    // Output repos
     document.getElementById('repos').innerHTML = output;
   }
 
@@ -71,13 +70,11 @@ class UI {
     // Insert alert
     container.insertBefore(div, search);
 
-    // Timeout after 3 sec
     setTimeout(() => {
       this.clearAlert();
     }, 3000);
   }
 
-  // Clear alert message
   clearAlert() {
     const currentAlert = document.querySelector('.alert');
 
